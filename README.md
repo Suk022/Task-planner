@@ -233,15 +233,50 @@ For this local demo, Papercut provides a safe and effective solution to test ema
 >Receive hourly emails regarding your pending tasks, with an option to unsubscribe.
 ![7](https://github.com/user-attachments/assets/1e8b3b50-93e6-4e6d-93df-7c32b1ca83c9)
 
+## Deployment Plans
 
-## Future Enhancements
+While the current setup works well for local development using XAMPP, WSL, and Papercut SMTP, I am actively exploring ways to simplify and improve the deployment process. The goal is to make it more accessible, portable, and production-ready.
 
-Planned future improvements include:
+###  Simplified Local Deployment
 
-- Implementing real email delivery using authenticated SMTP services (e.g., SendGrid or Gmail SMTP)
-- Adding advanced task features such as:
-  - Due dates and priority levels
-  - Task categories or labels
-  - Persistent storage with a database and more
+- **Remove WSL Dependency**  
+  Replace the current CRON job setup with **Windows Task Scheduler** to run periodic scripts without needing a Linux environment.
+
+- **Switch to PHPMailer**  
+  Use [PHPMailer](https://github.com/PHPMailer/PHPMailer) instead of PHP’s `mail()` function for better configuration, SMTP support, and reliable email delivery.
+
+- **Use Gmail SMTP or SendGrid**  
+  Integrate Gmail SMTP or a third-party service like SendGrid to allow real email delivery without the need for Papercut SMTP.
+
+---
+
+### Web Deployment Plans
+
+- **Deploy on Free Hosting Platforms**  
+  Host the project using platforms like:
+  - [000webhost](https://www.000webhost.com/)
+  - [InfinityFree](https://infinityfree.net/)
+  - [Render](https://render.com/)
+
+- **Use cPanel or Hosting Schedulers**  
+  Schedule tasks using cPanel’s built-in CRON tools instead of managing scripts manually.
+
+- **Frontend-Backend Separation (Optional)**  
+  Decouple the frontend (hosted on GitHub Pages or Netlify) and the backend (hosted on Render or similar) for greater flexibility.
+
+---
+
+###  Framework & Storage Upgrade (Planned)
+
+- **Framework Transition**  
+  Rebuild the project using a framework like **Laravel** for improved routing, email handling, and task scheduling with Laravel’s Artisan command scheduler.
+
+- **Move to Database Storage**  
+  Replace file-based storage with a lightweight database such as **SQLite** or **MySQL** to support better data integrity and scalability.
+
+---
+
+These enhancements will help reduce software overhead, improve user experience, and prepare the system for real-world deployment scenarios.
+
 
 ***THANK YOU :)***
