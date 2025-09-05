@@ -58,41 +58,41 @@ src/
 
 3. **Configure PHP mail settings:**
    - Update your php.ini:
-     ```
+   ```bash
      [mail function]
      SMTP = localhost
      smtp_port = 25
      sendmail_from = noreply@localhost
-     ```
+   ```
    - Save the file and restart Apache
 
    Or use .htaccess in src/:
    
-    ```
+   ```bash
     php_value SMTP localhost
     php_value smtp_port 25
     php_value sendmail_from noreply@localhost
-    ```
+   ```
    - Restart Apache for the changes to take effect.
   
 4. Set up CRON job (Linux/WSL)
    - Navigate to the project directory:
-     ```bash
+   ```bash
      cd /mnt/c/xampp/htdocs/php-assignment
-     ```
+   ```
    - Edit the CRON configuration:
-     ```bash
+   ```bash
      crontab -e
-     ```
+   ```
    - Add:
-     ```
+   ```
      0 * * * * cd /mnt/c/xampp/htdocs/php-assignment/src && /mnt/c/xampp/php/php.exe cron.php
-     ```
+   ```
    - Save and exit (Ctrl+X, then Y, then Enter)
    - Verify CRON job is set:
-     ```bash
+   ```bash
      crontab -l
-     ```
+   ```
      
 ## Usage
 
@@ -126,17 +126,17 @@ src/
 
 **CRON not working?**
    - Verify CRON service is running:
-     ```bash
+   ```bash
      sudo service cron status
-     ```
+   ```
    - Check CRON logs:
-     ```bash
+   ```bash
      grep CRON /var/log/syslog
-     ```
+   ```
    - Test manually:
-     ```bash
+   ```bash
      cd /mnt/c/xampp/htdocs/php-assignment/src && /mnt/c/xampp/php/php.exe cron.php
-     ```
+   ```
 
 **WSL Issues?**
    - Update WSL: wsl --update
@@ -144,15 +144,15 @@ src/
 
 **Page not loading?**
    - If you see:
-      ```
+   ```
       Not Found
       The requested URL was not found on this server.
       Apache/2.4.29 (Ubuntu) Server at localhost Port 80
-      ```
+   ```
    - Run:
-      ```
+   ```
       sudo service apache2 stop
-      ```
+   ```
 
 ## Important Note on Email Delivery
 This project uses **Papercut SMTP** as a local SMTP testing tool. As a result:
