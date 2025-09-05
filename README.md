@@ -213,25 +213,29 @@ For this local demo, Papercut provides a safe and effective solution to test ema
 
 ### Screenshots/Visuals
 >The primary webpage contains features related to tasks and includes a field for email.
-![1](https://github.com/user-attachments/assets/8425a1c8-abed-4d2b-9429-68347281f2e2)
+<img width="800" height="980" alt="Screenshot 2025-08-26 200710" src="https://github.com/user-attachments/assets/5500952f-7a1f-4850-a7bb-6ebf239511f4" />
 
 >Confirmation message displayed after submitting a valid email.
-![2](https://github.com/user-attachments/assets/50f92263-8996-4738-a08c-72ad51dd0c77)
+<img width="800" height="980" alt="Screenshot 2025-08-26 200718" src="https://github.com/user-attachments/assets/40c00e25-8449-4d9d-840a-021b0779c776" />
+
 
 >Papercut SMTP tool catches emails sent from the local machine.
-![3](https://github.com/user-attachments/assets/1ec9d572-d9a8-4bbd-b1ee-d2e14193175b)
+<img width="800" height="980" alt="Screenshot 2025-08-26 200726" src="https://github.com/user-attachments/assets/eaea7344-da1e-4e8d-b092-6c3121180e5f" />
+
 
 >Verification email to verify email and subscribe to reminder emails.
 ![4](https://github.com/user-attachments/assets/b802d74c-3bea-46ae-b38f-fd2f0dcb8ae8)
 
 >Notification shown after email verification is completed successfully.
-![5](https://github.com/user-attachments/assets/783d4318-b1d2-4e99-8246-6107cd1198a7)
+<img width="800" height="980" alt="Screenshot 2025-08-26 200735" src="https://github.com/user-attachments/assets/e1d0b295-7d1f-44dd-94a3-8f7991b257c7" />
 
->Email reminders will be sent every hour following successful verification.
-![6](https://github.com/user-attachments/assets/b43ea54f-0ff3-4786-bab3-002c90014d42)
+
+>CRON setup, Email reminders will be sent every hour following successful verification.
+<img width="800" height="980" alt="Screenshot 2025-08-26 200937" src="https://github.com/user-attachments/assets/fc71d32e-ec54-45cd-93ca-b423432866a3" />
+
 
 >Receive hourly emails regarding your pending tasks, with an option to unsubscribe.
-![7](https://github.com/user-attachments/assets/1e8b3b50-93e6-4e6d-93df-7c32b1ca83c9)
+<img width="800" height="980" alt="Screenshot 2025-08-26 201108" src="https://github.com/user-attachments/assets/8c9e3e3a-32b3-43cd-87f2-5e688b7302a3" />
 
 ## Deployment Plans
 
